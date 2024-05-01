@@ -1,0 +1,45 @@
+
+div{
+    text-align: center;
+    
+}
+ul {
+    list-style: none;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+h4{
+    background-color: red;
+    cursor: pointer;
+    color: whitesmoke;
+    border: 2px solid black;
+    box-shadow: inset;
+    padding: 2px;
+    display: inline;
+    font-size: small;
+    
+}
+h4:hover{
+    background-color: cadetblue;
+    font-size: medium;
+}
+ul li{
+    margin: 1.5rem 0.5rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    font-size: larger;
+}

@@ -1,0 +1,20 @@
+<div>
+    <h1>All Snippets</h1>
+    
+    @if(authServiceGetter().isAuthenticated()==false){
+        <a routerLink="/login" routerLinkActive="active">
+            <h4> Login to Create Your snippet </h4>
+        </a>
+    }
+    
+    <ul>
+        @if(allSnippet.length == 0){
+        <li>No data</li>
+        }
+        @for (item of allSnippet; track item.id) {
+            <li><a [routerLink]="['/snippet', item.id]">{{ item.title }}</a></li>
+       
+        
+        }
+    </ul>
+</div>

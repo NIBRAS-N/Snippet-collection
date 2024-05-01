@@ -1,0 +1,14 @@
+
+<form class="container" [formGroup]="snippetForm">
+    <h4>Create code snippet</h4>
+    <br/>
+    <input type="text"  placeholder="Title" [formControl]="title" />
+    <h5 class="red-text" [hidden]="title.valid || title.untouched">Title is required</h5>
+    <br/>
+    <textarea  placeholder="code snippet here" [formControl]="snippet" ></textarea>
+    <h5 class="red-text" [hidden]="snippet.valid || snippet.untouched">Code is required</h5>
+    <br/>
+    <button  class="btn-green" (click)="subm()"  >Create</button>
+    <button class="btn-green"  (click)="reset()">Reset</button>
+    
+ </form>
